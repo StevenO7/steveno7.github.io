@@ -9,6 +9,7 @@ import { useState } from "react";
 import devsz from "../public/Steven Headshot.png";
 import nova from "../public/NVH.png";
 import chef from "../public/ChefBuddy.png";
+import amd from "../public/AMD.png";
 import qmind from "../public/QMIND.png";
 import Image from "next/image";
 import web1 from "../public/nvhweb.png";
@@ -40,7 +41,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="https://drive.google.com/file/d/1Ivoui_RHN0yx5ZhmyaQhoU7eXALh35iT/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1YGq1giX2cLmZolzIo8R7TYa4KuXmhvov/view?usp=sharing"
                 >
                   Resume
                 </a>
@@ -55,8 +56,9 @@ export default function Home() {
               Full Stack Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Computer Science student exploring the world of developing
-              and design. Join me down below!
+              Computer Science student currently on internship! Currently
+              exploring the world of product management, but with a passion in software 
+              development and design. Join me down below!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
             <ul className="flex items-center">
@@ -88,14 +90,26 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl text-center py-1 dark:text-white ">Partnered Corporations</h3>
+            <h3 className="text-3xl text-center py-1 dark:text-white ">Highlighted Projects</h3>
             <p className="text-md text-center py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a full stack
-              developer, I've done business projects and personal projects
-              and consulted for startups.
+              Even though I am at the start of my professional career, there are 
+              many projects and experiences that I have devoted a good amount of time to.
             </p>
           </div>
           <div className="text-center lg:flex gap-10" >
+            <div className="text-center shadow-md p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <Image src={amd} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">AMD</h3>
+              <p className="py-2">
+                AMD is a leader in semiconductor design and is most know for 
+                it's contribution to the GPU space.
+              </p>
+              <h4 className="py-4 text-teal-600">My Tasks</h4>
+              <p className="text-gray-800 py-1">Managed the developement and growth of ROCm Blogs</p>
+              <p className="text-gray-800 py-1">Researched and developed PRD's for various ROCm Libraries</p>
+              <p className="text-gray-800 py-1">Ensured processes were valid by testing ROCm on Ubuntu 22.04</p>
+              <p className="text-gray-800 py-1">Facilitated the growth of the team with improving and documenting processes</p>
+            </div>
             <div className="text-center, shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={nova} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
@@ -126,69 +140,11 @@ export default function Home() {
               <p className="text-gray-800 py-1">Link the firebase Backend</p>
               <p className="text-gray-800 py-1">Present and pitch</p>
             </div>
-            <div className="text-center shadow-md p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={qmind} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">QMIND</h3>
-              <p className="py-2">
-                QMIND is Queens University's premier AI club that works with
-                all sorts of AI alogorithms and all sorts of companies
-              </p>
-              <h4 className="py-4 text-teal-600">My Tasks</h4>
-              <p className="text-gray-800 py-1">Scrape the web for research papers</p>
-              <p className="text-gray-800 py-1">Create a Database and organize it</p>
-              <p className="text-gray-800 py-1">Use GPT-3 to create a search algorithm</p>
-              <p className="text-gray-800 py-1">Build the application</p>
-            </div>
           </div>
         </section>
         <section className="py-10">
-          <div>
-            <h3 className="text-3xl text-center py-1 dark:text-white ">Portofolio</h3>
-            <p className="text-md text-center py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I have built many projects (and many more to come) which I 
-              have displayed here. As I do more projects, the page will be
-              upated accordingly
-            </p>
-          </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                style="responsive"
-                src={web1}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                style="responsive"
-                src={web2}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                style="responsive"
-                src={web3}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                style="responsive"
-                src={web4}
-              />
-            </div>
-          </div>
-        </section>
+          //secret section, work in progress
+        </section> 
       </main>
     </div>
   );
