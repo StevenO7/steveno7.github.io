@@ -57,7 +57,7 @@ export default function Home() {
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Computer Science student currently on internship! Currently
-              exploring the world of product management, but with a passion in software 
+              exploring the world of product management and has a passion in software 
               development and design. Join me down below!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -93,7 +93,7 @@ export default function Home() {
             <h3 className="text-3xl text-center py-1 dark:text-white ">Highlighted Projects</h3>
             <p className="text-md text-center py-2 leading-8 text-gray-800 dark:text-gray-200">
               Even though I am at the start of my professional career, there are 
-              many projects and experiences that I have devoted a good amount of time to.
+              many projects and experiences that I have devoted a good amount of time to that I would love to share
             </p>
           </div>
           <div className="text-center lg:flex gap-10" >
@@ -143,7 +143,6 @@ export default function Home() {
           </div>
         </section>
         <section className="py-10">
-          //secret section, work in progress
         </section> 
       </main>
     </div>
